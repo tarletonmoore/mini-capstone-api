@@ -10,7 +10,10 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.create(name: "Mario Kart 64", price: 40, image_url: "https://upload.wikimedia.org/wikipedia/en/a/a1/Mario_Kart_64.jpg", description: "Mario Kart 64 is a kart racing video game developed and published by Nintendo for the Nintendo 64.")
+    @product = Product.create(name: params[:input_name],
+                              price: params[:input_price],
+                              image_url: params[:input_image_url],
+                              description: params[:input_description])
     render template: "products/show"
   end
 end
