@@ -10,10 +10,12 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.create(name: params[:name],
-                              price: params[:price],
-                              image_url: params[:mage_url],
-                              description: params[:description])
+    @product = Product.create(
+      name: params[:name],
+      price: params[:price],
+      image_url: params[:mage_url],
+      description: params[:description],
+    )
     render template: "products/show"
   end
 
