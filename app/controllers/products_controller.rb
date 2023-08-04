@@ -16,7 +16,11 @@ class ProductsController < ApplicationController
       image_url: params[:mage_url],
       description: params[:description],
     )
-    render template: "products/show"
+    if @product.valid?
+      render template: "products/show"
+    else
+      render json: { errors: @product.errors.full_messages }
+    end
   end
 
   def update
@@ -26,7 +30,11 @@ class ProductsController < ApplicationController
     @product.image_url = params[:image_url] || @product.image_url
     @product.description = params[:description] || @product.description
     @product.save
-    render template: "products/show"
+    if @product.valid?
+      render template: "products/show"
+    else
+      render json: { errors: @product.errors.full_messages }
+    end
   end
 
   def destroy
