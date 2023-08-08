@@ -31,34 +31,34 @@
 
 #images
 
-image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/5/57/The_Legend_of_Zelda_Ocarina_of_Time.jpg", product_id: 1)
+# image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/5/57/The_Legend_of_Zelda_Ocarina_of_Time.jpg", product_id: 1)
 
-image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/1/12/Banjo_Kazooie_Cover.png", product_id: 2)
+# image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/1/12/Banjo_Kazooie_Cover.png", product_id: 2)
 
-image = Image.create(url: "https://m.media-amazon.com/images/I/516wluEIzmL.jpg", product_id: 3)
+# image = Image.create(url: "https://m.media-amazon.com/images/I/516wluEIzmL.jpg", product_id: 3)
 
-image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/6/6a/Super_Mario_64_box_cover.jpg", product_id: 4)
+# image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/6/6a/Super_Mario_64_box_cover.jpg", product_id: 4)
 
-image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/3/36/GoldenEye007box.jpg", product_id: 5)
+# image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/3/36/GoldenEye007box.jpg", product_id: 5)
 
-image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/a/a1/Mario_Kart_64.jpg", product_id: 6)
+# image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/a/a1/Mario_Kart_64.jpg", product_id: 6)
 
-image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/4/41/Banjo-Tooie_Coverart.png", product_id: 7)
+# image = Image.create(url: "https://upload.wikimedia.org/wikipedia/en/4/41/Banjo-Tooie_Coverart.png", product_id: 7)
 
-image = Image.create(url: "https://i.ebayimg.com/images/g/HUcAAOSwP9djWCTF/s-l1200.webp", product_id: 10)
+# image = Image.create(url: "https://i.ebayimg.com/images/g/HUcAAOSwP9djWCTF/s-l1200.webp", product_id: 10)
 
-image = Image.create(url: "https://s3.amazonaws.com/zeldaspeedruns/app/public/system/images/10/original/NTSC%20NA%2011.jpg?1397769437", product_id: 1)
+# image = Image.create(url: "https://s3.amazonaws.com/zeldaspeedruns/app/public/system/images/10/original/NTSC%20NA%2011.jpg?1397769437", product_id: 1)
 
-image = Image.create(url: "https://images-na.ssl-images-amazon.com/images/I/71S3yrn-vvL._AC_UL750_SR750,750_.jpg", product_id: 2)
+# image = Image.create(url: "https://images-na.ssl-images-amazon.com/images/I/71S3yrn-vvL._AC_UL750_SR750,750_.jpg", product_id: 2)
 
-image = Image.create(url: "https://img.joomcdn.net/35f9551484a5386a5ce2115346ce1955e62b0ecb_1024_1024.jpeg", product_id: 3)
+# image = Image.create(url: "https://img.joomcdn.net/35f9551484a5386a5ce2115346ce1955e62b0ecb_1024_1024.jpeg", product_id: 3)
 
-image = Image.create(url: "https://m.media-amazon.com/images/I/51IDmrAfDeL.jpg", product_id: 4)
+# image = Image.create(url: "https://m.media-amazon.com/images/I/51IDmrAfDeL.jpg", product_id: 4)
 
-image = Image.create(url: "https://m.media-amazon.com/images/I/71qifXybXUL._AC_UF1000,1000_QL80_.jpg", product_id: 5)
+# image = Image.create(url: "https://m.media-amazon.com/images/I/71qifXybXUL._AC_UF1000,1000_QL80_.jpg", product_id: 5)
 
-image = Image.create(url: "https://i.ebayimg.com/images/g/1PQAAOSwjOVjoD9~/s-l600.jpg", product_id: 6)
+# image = Image.create(url: "https://i.ebayimg.com/images/g/1PQAAOSwjOVjoD9~/s-l600.jpg", product_id: 6)
 
-image = Image.create(url: "https://thegameexperts.com.au/cdn/shop/products/Banjo_Tooie_N64_Cart_1200x1200.jpg?v=1618547433", product_id: 7)
+# image = Image.create(url: "https://thegameexperts.com.au/cdn/shop/products/Banjo_Tooie_N64_Cart_1200x1200.jpg?v=1618547433", product_id: 7)
 
-image = Image.create(url: "https://i.ebayimg.com/images/g/~cIAAOSw185j-DGl/s-l1200.webp", product_id: 10)
+# image = Image.create(url: "https://i.ebayimg.com/images/g/~cIAAOSw185j-DGl/s-l1200.webp", product_id: 10)
