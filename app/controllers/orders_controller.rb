@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user
+
   def show
     @order = Order.find_by(id: params[:id])
     if @order.user_id == current_user.id
@@ -9,7 +11,8 @@ class OrdersController < ApplicationController
   end
 
   def index
-    @orders = Order.where(user_id: current_user.id)
+    # @orders = Order.where(user_id: current_user.id)
+    @orders = current_user.orders
     render :index
   end
 
