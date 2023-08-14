@@ -24,8 +24,7 @@ class OrdersController < ApplicationController
 
     @order = Order.create(
       user_id: current_user.id,
-      product_id: 1,
-      quantity: params[:quantity],
+      
       subtotal: calculated_subtotal,
       tax: calculated_tax,
       total: calculated_total,
