@@ -17,18 +17,33 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @product = Product.find_by(id: params[:product_id])
-    calculated_subtotal = params[:quantity].to_i * @product.price
+    @user_products = current_user.carted_products
+    @carted_products = @user_products.where(status == "carted")
+
+    calculated_subtotal = 0
+    @carted_products.each do |carted_product|
+      temp_sum = Product.find_by(id: carted_product.product_id).price * carted_product.quantity
+      calculated_subtotal += temp_sum
+    end
+
     calculated_tax = calculated_subtotal * 0.09
     calculated_total = calculated_subtotal + calculated_tax
-
     @order = Order.create(
       user_id: current_user.id,
-      
       subtotal: calculated_subtotal,
       tax: calculated_tax,
       total: calculated_total,
+
     )
-    render :show
+    if @order.valid?
+      @carted_products.each do |carted_product|
+        carted_product.status = "purchased"
+        carted_product.order_id = @order.id
+        carted_product.save
+      end
+      render :show
+    else
+      render json: { errors: @product.errors.full_messages }
+    end
   end
 end
